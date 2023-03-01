@@ -1,0 +1,15 @@
+body{
+    background-color: brown;
+    color: crimson;
+
+}
+
+classe1{
+    width: 400px;
+    height: 300px;
+    border: 50px;
+}
+h1{
+    margin: 50px;
+    border: 1px;
+}
