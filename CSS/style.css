@@ -15,6 +15,11 @@ classe1{
     width: 80%;
     border: : 1px dotted blue;
 }
+
+.textocentro{
+    text-align: center;
+}
+
 h1{
     margin: 50px;
     padding: 25px 50px 45px 20px;
