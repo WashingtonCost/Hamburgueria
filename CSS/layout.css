@@ -69,6 +69,10 @@ body{
     margin-top: 20px;
 }
 
+.card:after{
+    clear:both;
+}
+
 .principal:after{
     content: "";
     display: table;
