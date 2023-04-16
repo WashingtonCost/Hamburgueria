@@ -2,7 +2,7 @@
 
 
     
-  @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@700&display=swap');
+
 
 
 
@@ -113,66 +113,77 @@ body{
     } 
 }
 
+
+
+
+
+
+
+/* Estilo da seção de destaque */
 .destaque {
-    background-color: #F2C94C;
-    color: #000000;
-    padding: 20px;
+    background-color: #F2C94C; /* Cor de fundo */
+    color: #000000; /* Cor do texto */
+    padding: 20px; /* Espaçamento interno */
 }
 
+/* Estilo do título da seção de destaque */
 .destaque h2 {
-    
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+    font-size: 2.5rem; /* Tamanho da fonte */
+    margin-bottom: 20px; /* Margem inferior */
 }
 
+/* Estilo do texto da seção de destaque */
 .destaque p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+    font-size: 1.2rem; /* Tamanho da fonte */
+    margin-bottom: 20px; /* Margem inferior */
 }
 
+/* Estilo do botão de destaque na seção de destaque */
 .destaque .botao-destaque {
-    display: inline-block;
-    background-color: #2C3E50;
-    color: #F2C94C;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: all 0.3s ease;
+    display: inline-block; /* Exibição em linha */
+    background-color: #2C3E50; /* Cor de fundo */
+    color: #F2C94C; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 5px; /* Raio da borda */
+    text-decoration: none; /* Sem decoração de texto */
+    transition: all 0.3s ease; /* Transição de animação */
 }
 
+/* Estilo do botão de destaque na seção de destaque quando o mouse está sobre ele */
 .destaque .botao-destaque:hover {
-    background-color: #F2C94C;
-    color: #2C3E50;
+    background-color: #F2C94C; /* Cor de fundo */
+    color: #2C3E50; /* Cor do texto */
 }
+
+/* Estilo do rodapé */
 .rodapé{
-   
-    padding: 20px;
-    text-align: center;
-    background-color: #63250D;
-    color: #e4df51;
-    text-align: center;
-    width: 100%;
-    position: absolute;
-    bottom: 0%;   
-      
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto */
+    background-color: #63250D; /* Cor de fundo */
+    color: #e4df51; /* Cor do texto */
+    text-align: center; /* Alinhamento do texto */
+    width: 100%; /* Largura */
+    position: absolute; /* Posição absoluta */
+    bottom: 0%; /* Alinhamento inferior */
 }
 
+/* Estilo do botão de cupom */
 .botaoCupom {
-    display: inline-block;
-    background-color: #2C3E50;
-    color: #F2C94C;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-
+    display: inline-block; /* Exibição em linha */
+    background-color: #2C3E50; /* Cor de fundo */
+    color: #F2C94C; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 5px; /* Raio da borda */
+    text-decoration: none; /* Sem decoração de texto */
+    transition: all 0.3s ease; /* Transição de animação */
 }
 
+/* Estilo do botão de cupom quando o mouse está sobre ele */
 .botaoCupom:hover {
-    background-color: #F2C94C;
-    color: #2C3E50;
-
+    background-color: #F2C94C; /* Cor de fundo */
+    color: #2C3E50; /* Cor do texto */
 }
+
 
 
 
