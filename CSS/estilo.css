@@ -1,0 +1,7 @@
+.images img{
+    width: 100%;
+    max-width: 400px; /* ajuste o tamanho máximo conforme sua necessidade */
+    height: auto;
+    padding: 20px;
+}
+   
