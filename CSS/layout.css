@@ -169,7 +169,6 @@ body{
 
 /* Estilo do botão de cupom */
 .botaoCupom {
-<<<<<<< HEAD
     display: inline-block; /* Exibição em linha */
     background-color: #2C3E50; /* Cor de fundo */
     color: #F2C94C; /* Cor do texto */
@@ -177,16 +176,6 @@ body{
     border-radius: 5px; /* Raio da borda */
     text-decoration: none; /* Sem decoração de texto */
     transition: all 0.3s ease; /* Transição de animação */
-=======
-    display: inline-block;
-    background-color: wheat;
-    color: #F2C94C;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-
->>>>>>> b3f7ddc7c790f8486ea350624f71c8f67958e01e
 }
 
 /* Estilo do botão de cupom quando o mouse está sobre ele */
