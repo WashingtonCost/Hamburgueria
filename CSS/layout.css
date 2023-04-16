@@ -15,6 +15,7 @@ body{
     padding:30px;
     text-align: center;
     background-color: #572215;
+    color: #e4df51;
 }
 
 .cabecalho h1{
@@ -62,7 +63,7 @@ body{
 }
 
 .card{
-    background-color: #472006;
+    background-color: #ae5e28;
     padding: 20px;
     margin-top: 20px;
 }
@@ -81,6 +82,7 @@ body{
     padding: 20px;
     text-align: center;
     background-color: #63250D;
+    color: #e4df51;
     margin-top: 20px;
 }
 
@@ -106,7 +108,7 @@ body{
 
 .destaque {
     background-color: #F2C94C;
-    color: #5e0505c4;
+    color: #000000;
     padding: 20px;
 }
 
@@ -124,7 +126,7 @@ body{
 .destaque .botao-destaque {
     display: inline-block;
     background-color: #2C3E50;
-    color: #FFF;
+    color: #F2C94C;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
@@ -146,6 +148,23 @@ body{
     position: absolute;
     bottom: 0%;   
       
+}
+
+.botaoCupom {
+    display: inline-block;
+    background-color: #2C3E50;
+    color: #F2C94C;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+}
+
+.botaoCupom:hover {
+    background-color: #F2C94C;
+    color: #2C3E50;
+
 }
 
 
