@@ -1,16 +1,7 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');*/
 
+/* ########################################################################            Washington          ###################################################################*/
 
-    
-
-
-
-
-
-*{
-    box-sizing: border-box;
-}
-
+/*mudar a fonte tamanho das letras*/
 body{
     font-family: 'Arial', Helvetica, sans-serif;
     background-color: #F5D6BF;
@@ -18,6 +9,7 @@ body{
     padding: 10px;
 }
 
+/*muda o fundo e a cor do cabeçalho*/
 .cabecalho{
     padding:30px;
     text-align: center;
@@ -25,16 +17,19 @@ body{
     color: #e4df51;
 }
 
+/*muda o tamanho da letra e a fonte do cabeçalho*/
 .cabecalho h1{
     font-size: 50px;
     font-family: 'Pacifico', cursive;
 }
 
+/* coloca uma cor para ficar bnt */
 .topnav{
     overflow: hidden;
     background-color: #FFFFFF;
 }
 
+/* muda o designer dos botoes */
 .topnav a{
     display: block;
     color: #000000;
@@ -44,6 +39,11 @@ body{
     float: left;
 }
 
+/* ########################################################################            Whashington         ###################################################################*/
+
+/* ########################################################################            Luiz          ###################################################################*/
+
+/* mudar a cor qnd passa em cima */
 .topnav a:hover{
     background-color: rgba(255, 0, 0, 0.767);
     color: #000000;
@@ -51,40 +51,14 @@ body{
     border-radius: 5px;
 }
 
-.colEsq{
-    float: left;
-    width: 75%;
-}
-
-.colDir{
-    float: left;
-    width: 25%;
-    background-color: #1A1A1A;
-    padding-left: 20px;
-}
-
-.imagens{
-    background-color: #EEC281;
-    width: 40%;
-    padding: 10px;
-}
-
+/* adiciona uma tela de fundo para colocar img ou msg */
 .card{
     background-color: #ae5e28;
     padding: 20px;
     margin-top: 20px;
 }
 
-.card:after{
-    clear:both;
-}
-
-.principal:after{
-    content: "";
-    display: table;
-    clear: both;
-}
-
+/* classe */
 .footer {
     padding: 20px;
     text-align: center;
@@ -93,30 +67,15 @@ body{
     margin-top: 20px;
 }
 
+/* classe image muda as image*/
 .imagens img{
     width: 40%;
     float: left;
 }
 
-@media screen and (max-width:800px) {
-    .colDir,
-    .colEsq {
-        width: 10%;
-        padding: 0;
-    } 
-}
+/* ########################################################################          Luiz         ###################################################################*/
 
-@media screen and (max-width:400px) {
-    .topnav a{
-        float: none;
-        width: 100%;
-    } 
-}
-
-
-
-
-
+/* ########################################################################            NETO          ###################################################################*/
 
 
 /* Estilo da seção de destaque */
@@ -187,61 +146,11 @@ body{
 }
 
 
+/* ########################################################################            NETO          ###################################################################*/
 
+/* ########################################################################            Luiz          ###################################################################*/
 
-
-
-
-
-
-
-
-  
-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  label {
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  input[type="text"] {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  input[type="submit"] {
-    background-color: #f44336;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: #d32f2f;
-  }
-  
-
-
-
-
-
-
-
-
+    /* designe do form */
   form {
     display: flex;
     flex-direction: column;
@@ -253,11 +162,13 @@ form {
     border-radius: 5px;
   }
   
+  /* label */
   label {
     font-weight: bold;
     margin-bottom: 5px;
   }
   
+  /*select */
   select, input[type="text"] {
     padding: 10px;
     margin-bottom: 15px;
@@ -265,11 +176,8 @@ form {
     border-radius: 5px;
   }
   
-  input[type="text"][readonly] {
-    background-color: #eee;
-    cursor: not-allowed;
-  }
   
+  /* muda o botão de pagar com cartão */
   input[type="submit"] {
     background-color: #f44336;
     color: #fff;
@@ -280,31 +188,12 @@ form {
     cursor: pointer;
   }
   
-  input[type="submit"]:hover {
-    background-color: #d32f2f;
-  }
-  
 
-
-
-
-
-
-  /* Estilo para o campo de entrada de quantidade */
-input[type="number"] {
+  /* quantidade designey */
+  input[type="number"] {
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 100px;
   }
-  
-  /* Estilo para o campo de entrada de preço total */
-  #total {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 100%;
-  }
-  
