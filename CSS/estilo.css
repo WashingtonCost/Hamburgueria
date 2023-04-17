@@ -1,13 +1,16 @@
+/* Define as regras de estilo para as imagens dentro da classe .images */
 .images img{
-    width: 100%;
-    max-width: 400px; /* ajuste o tamanho máximo conforme a necessidade */
-    height: auto;
-    padding: 20px;
+    width: 100%; /* Define a largura da imagem como 100% */
+    max-width: 400px; /* Define a largura máxima da imagem como 400px */
+    height: auto; /* Define a altura da imagem como automática */
+    padding: 20px; /* Define o preenchimento de 20px em torno da imagem */
 }
    
+/* Define as regras de estilo para a classe .linkinsta */
 .linkinsta {
-color: #0a0a0a;
-padding: 0px;
-font-size: xx-large;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+color: #0a0a0a; /* Define a cor do texto como #0a0a0a */
+padding: 0px; /* Define o preenchimento de 0px ao redor do texto */
+font-size: xx-large; /* Define o tamanho da fonte como xx-large */
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 
+Geneva, Verdana, sans-serif; /* Define a família de fontes */
 }
