@@ -176,6 +176,8 @@ body{
     border-radius: 5px; /* Raio da borda */
     text-decoration: none; /* Sem decoração de texto */
     transition: all 0.3s ease; /* Transição de animação */
+    font-size: large;
+    color: #000000;
 }
 
 /* Estilo do botão de cupom quando o mouse está sobre ele */
