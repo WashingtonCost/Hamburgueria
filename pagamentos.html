@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="CSS/layout.css">
     <link rel="stylesheet" href="CSS/estilo.css">
     <link rel="shortcut icon" type="image/x-icon" href="images/fast-food.png">
+    <link rel="stylesheet" href="pagamento.js">
 </head>
 <body class="destaque">
     <header class="cabecalho">
@@ -65,15 +66,15 @@
             <label for="quantity">Quantidade:</label>
             <input type="number" id="quantity" name="quantity" min="1" value="1">
 
-            <label for="product_name">Selecione um Cupon:</label>
-            <select id="product_name" name="product_name">
+            <label for="produto_name">Selecione um Cupon:</label>
+            <select id="produto_name" name="produto_name">
               <option value=" "> </option>
               <option value="10CONTO">10CONTO</option>
               <option value="20CONTO">20CONTO</option>
               <option value="30CONTO">30CONTO</option>
             </select>
             <label for="product_price">Preço do produto:</label>
-            <input type="text" id="product_price" name="product_price" required>
+            <input type="text" id="product_price" name="product_price" readonly>
             <img src="images/QRcodePix.jpeg" alt="">
             <input type="submit" value="Pagar com cartão de crédito">
           </form>
