@@ -36,15 +36,20 @@
     <h1>Pedido</h1>
   <p>Entre em contato conosco para fazer um Pedido.</p>
   <form>
-    <label for="nome">Nome Da Rua:</label>
+    <label for="product_price">Nome Da Rua:</label>
     <input type="text" id="numerodamesa" name="numerodamesa" required>
 
-    <label for="email">Bairro:</label>
-    <input type="email" id="bairro" name="bairro" required>
+    <label for="product_price">Bairro:</label>
+    <input type="text" id="bairro" name="bairro" required>
 
 
-    <label for="telefone">Cupom:</label>
-    <input type="tel" id="cupom" name="cupom" required>
+    <label for="product_name">Cupom:</label>
+            <select id="product_name" name="product_name">
+              <option value=" "> </option>
+              <option value="">5%</option>
+            <option value="dinheiro">10%</option>
+            <option value="pix">15%</option>
+          </select>
 
     
     <label for="product_name">Lanches:</label>
@@ -104,7 +109,8 @@
     <label for="mensagem">Complemento:</label>
     <textarea id="mensagem" name="mensagem" required></textarea>
 
-    <button type="submit">Enviar</button>
+    
+    <input type="submit" value="Adquirir">
   </form>
 </main>
 
