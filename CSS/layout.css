@@ -188,6 +188,10 @@ body{
     cursor: pointer;
   }
   
+  input[type="text"][readonly] {
+    background-color: #eee;
+    cursor: not-allowed;
+  }
 
   /* quantidade designey */
   input[type="number"] {
