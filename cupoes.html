@@ -7,7 +7,7 @@
     <title>Cupões de Desconto</title>
     <link rel="shortcut icon" href="images/favconBurguer212 gr.png"type="image/x-icon">
     <link rel="stylesheet" href="CSS/layout.css">
-    <link rel="stylesheet" href="CSS/estilo.css">
+    
     <link rel="shortcut icon" type="image/x-icon" href="images/fast-food.png">
 </head>
 <body class="destaque">
@@ -30,28 +30,31 @@
     <p>Aqui você pode se esbaldar sem se preocupar com o tamanho da conta! Pegue seus cupons e venha saciar sua fome e seu bolso ao mesmo tempo."</p>
     <div>
       
+
+      <form action="/process_payment" method="post">
+
+        <label for="product_price">Digite o Código do Cupon:</label>
+        <input type="text" id="product_price" name="product_price" required>
+        <input type="submit" value="Adquirir">
+
+        <h3>Seus cupons</h3>
+
       <div class="images img">
-        <img src="images/10%.jpg" alt="Cupom 1">
-        <h2>Cupom: 1</h2>
+        <img src="images/icons8-vale-64.png" alt="Cupom 1">
         <p>Desconto de 10% em qualquer combo.</p>
-        <div class="botaoCupom">
-        <a href="#">Obter Cupom</a>
-        </div>
+        
       
       </div>
       <div class="images img">
-        <img src="images/20%.png" alt="Cupom 2">
-        <h2>Cupom: 2</h2>
-        <p>Desconto de 20% em qualquer porção.</p>
-        <div class="botaoCupom">
-        <a href="#">Obter Cupom</a>
-      </div>''
+        <img src="images/icons8-vale-64.png" alt="Cupom 2">
+        <p>R$ 5,00 a menos em qualquer porção acima de 15 Reais.</p>
+        
       <div class="images img">
-        <img src="images/30%.png" alt="Cupom 3">
-        <h2>Cupom: 3</h2>
-        <p>Desconto de 30% em qualquer bebida.</p>
-        <div class="botaoCupom">
-        <a href="#">Obter Cupom</a>
+        <img src="images/icons8-vale-64.png" alt="Cupom 3">
+        <p>Bebidas naturais com R$ 2,00 a menos.</p>
+        
+
+        </form>
       </div>
       </div>
     </div>
