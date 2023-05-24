@@ -4,7 +4,7 @@ body{
 
 }
 
-classe1{
+.classe1{
     width: 400px;
     height: 300px;
     border: 50px;
@@ -26,6 +26,13 @@ h1{
     border: 1px;
 }
 
+.image-container {
+    display: flex;
+    align-items: center;
+}
 
+.image-container img {
+    margin-right: 10px;
+}
   
   
