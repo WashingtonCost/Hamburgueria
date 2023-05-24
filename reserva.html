@@ -29,22 +29,66 @@
         <h1>Reserva</h1>
       <p>Entre em contato conosco para fazer uma reserva.</p>
       <form>
-        <label for="nome">Numero da Mesa:</label>
-        <input type="text" id="numerodamesa" name="numerodamesa" required>
+        <label for="product_name">Numero da Mesa:</label>
+              <select id="product_name" name="product_name">
+              <option value=" "> </option>
+              <option value="Laranja">Mesa 1</option>
+              <option value="Uva">Mesa 2</option>
+              <option value="Abacaxi">Mesa 3</option>
+              <option value="Maracuja">Mesa 4</option>
+              <option value="Morango">Mesa 5</option>
+              <option value="Coca_Cola">Mesa 6</option>
+              <option value="Coca_Lata">Mesa 7</option>
+              <option value="H2O">Mesa 8</option>
+              <option value="Guarana">Mesa 9</option>
+              <option value="Guarana_Lata">Mesa 10</option>
+              </select>
+        
+              <label for="quantity">Quantidade De Pessoa:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1">
+              
+              <label for="product_name">Endereço:</label>
+              <select id="product_name" name="product_name">
+              <option value=" "> </option>
+              <option value="Laranja">Rua José Almeida 558°</option>
+              <option value="Uva">Rua Nova Brasilia 745°</option>
+              <option value="Abacaxi">Rua Alvorada 219° </option>
+              </select>
 
-        <label for="email">Quantidade:</label>
-        <input type="email" id="quantidade" name="quantidade" required>
+              <label for="product_name">Horario:</label>
+              <select id="product_name" name="product_name">
+              <option value=" "> </option>
+              <option value="Laranja">12:00 as 14:00</option>
+              <option value="Uva">16:00 as 18:00</option>
+              <option value="Abacaxi">20:00 as 22:00 </option>
+              </select>
 
-        <label for="telefone">Valor:</label>
-        <input type="tel" id="telefone" name="telefone" required>
+              <label for="product_name">Area:</label>
+              <select id="product_name" name="product_name">
+              <option value=" "> </option>
+              <option value="Laranja">Fora</option>
+              <option value="Uva">Dentro</option>
+              <option value="Abacaxi">Ala Vip </option>
+              </select>
 
-        <label for="telefone">Horario:</label>
-        <input type="tel" id="telefone" name="telefone" required>
+              <label for="product_name">Data:</label>
+              <select id="product_name" name="product_name">
+              <option value=" "> </option>
+              <option value="Laranja">16/04</option>
+              <option value="Uva">17/04</option>
+              <option value="Abacaxi">18/04 </option>
+              </select>
+
+              <label for="mensagem">Digite Seu Nome:</label>
+              <textarea id="mensagem" name="mensagem" required></textarea>
+        
 
         <label for="mensagem">Complemento:</label>
         <textarea id="mensagem" name="mensagem" required></textarea>
 
-        <button type="submit">Enviar</button>
+        <input type="submit" value="Reservar">
+
+        
       </form>
     </main>
 </body>

@@ -26,6 +26,13 @@ h1{
     border: 1px;
 }
 
+.image-container {
+    display: flex;
+    align-items: center;
+}
 
+.image-container img {
+    margin-right: 10px;
+}
   
   
