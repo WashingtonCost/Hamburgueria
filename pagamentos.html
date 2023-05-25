@@ -31,7 +31,7 @@
         
         <h2>Pagamentos</h2>
           <form action="/process_payment" method="post">
-            <label for="product_name">Selecione um Produto:</label>
+            <label for="product_name">Selecione o Hamburgue:</label>
             <select id="product_name" name="product_name">
               <option value=" "> </option>
               <option value="BurgueDia">Dia: Prazer em Dobro</option>
@@ -41,17 +41,41 @@
               <option value="BurgueEggplosao">X-Eggplosão</option>
               <option value="BurgueTudoNela">X-TudoNela</option>
               <option value="BurgueVege">Veggie Delícia</option>
+              </select>
+
+              <label for="quantity">Quantidade:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1">
+
+              <label for="product_name">Selecione um Combo:</label>
+            <select id="product_name" name="product_name">
+              <option value=" "> </option>
               <option value="ComboCasal">Combo: Casal</option>
               <option value="ComboFamilia">Combo: Familia</option>
               <option value="ComboGiga">Combo: X-Giga</option>
               <option value="ComboBacon">Combo: X-Bacon</option>
               <option value="ComboCheese">Combo: X-Cheese</option>
               <option value="ComboDuplo">Combo: X-Duplo</option>
+              </select>
+
+              <label for="quantity">Quantidade:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1">
+
+              <label for="product_name">Selecione uma Porção:</label>
+            <select id="product_name" name="product_name">
+              <option value=" "> </option>
               <option value="PorcaoCamarao">Porção: Camarão Satisfeito</option>
               <option value="PorcaoPrazer">Porção: Prazer Explosivo de Batata</option>
               <option value="PorcaoCalabreza">Porção: CalabreZzzza da Noite</option>
               <option value="PorcaoFrango">Porção: Franguinho Crocante do Prazer</option>
               <option value="PorcaoNacho">Porção: Nacho Problema</option>
+              </select>
+
+              <label for="quantity">Quantidade:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1">
+
+              <label for="product_name">Selecione uma Bebida:</label>
+            <select id="product_name" name="product_name">
+              <option value=" "> </option>
               <option value="Laranja">Suco de Laranja</option>
               <option value="Uva">Suco de Uva</option>
               <option value="Abacaxi">Suco de Abacaxi</option>

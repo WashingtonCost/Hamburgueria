@@ -37,10 +37,11 @@
   <p>Entre em contato conosco para fazer um Pedido.</p>
   <form>
     <label for="product_price">Nome Da Rua:</label>
-    <input type="text" id="numerodamesa" name="numerodamesa" required>
+    <input type="text" id="numerodamesa" name="numerodamesa" maxlength="20" minlength="10" required>
 
     <label for="product_price">Bairro:</label>
-    <input type="text" id="bairro" name="bairro" required>
+    <input type="text" id="bairro" name="bairro" maxlength="20" minlength="10" required>
+    
 
 
     <label for="product_name">Cupom:</label>
@@ -98,16 +99,12 @@
               <option value="pix">Pix</option>
             </select>
 
-            <label for="product_name">Gorjeta:</label>
-            <select id="product_name" name="product_name">
-              <option value=" "> </option>
-              <option value="">5,00</option>
-            <option value="dinheiro">10,00</option>
-            <option value="pix">15,00</option>
-          </select>
+            <label for="mensagem">Gorjeta:</label>
+    <input type="number">
+    
 
     <label for="mensagem">Complemento:</label>
-    <textarea id="mensagem" name="mensagem" required></textarea>
+    <textarea id="mensagem" name="mensagem" maxlength="20" minlength="10" required></textarea>
 
     
     <input type="submit" value="Enviar">
