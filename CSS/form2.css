@@ -1,0 +1,213 @@
+
+/* ########################################################################            Washington          ###################################################################*/
+
+/*mudar a fonte tamanho das letras*/
+body{
+    font-family: 'Arial', Helvetica, sans-serif;
+    background-color: #F5D6BF;
+    color: #b11515;
+    padding: 10px;
+}
+
+/*muda o fundo e a cor do cabeçalho*/
+.cabecalho{
+    padding:30px;
+    text-align: center;
+    background-color: #572215;
+    color: #e4df51;
+}
+
+/*muda o tamanho da letra e a fonte do cabeçalho*/
+.cabecalho h1{
+    font-size: 50px;
+    font-family: 'Pacifico', cursive;
+}
+
+/* coloca uma cor para ficar bnt */
+.topnav{
+    overflow: hidden;
+    background-color: #FFFFFF;
+}
+
+/* muda o designer dos botoes */
+.topnav a{
+    display: block;
+    color: #000000;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+    float: left;
+}
+
+/* ########################################################################            Whashington         ###################################################################*/
+
+/* ########################################################################            Luiz          ###################################################################*/
+
+/* mudar a cor qnd passa em cima */
+.topnav a:hover{
+    background-color: rgba(255, 0, 0, 0.767);
+    color: #000000;
+    border-bottom: solid 1px red;
+    border-radius: 5px;
+}
+
+/* adiciona uma tela de fundo para colocar img ou msg */
+.card{
+    background-color: #ae5e28;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* classe */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #63250D;
+    color: #e4df51;
+    margin-top: 20px;
+}
+
+/* classe image muda as image*/
+.imagens img{
+    width: 40%;
+    float: left;
+}
+
+/* ########################################################################          Luiz         ###################################################################*/
+
+/* ########################################################################            NETO          ###################################################################*/
+
+
+/* Estilo da seção de destaque */
+.destaque {
+    background-color: #F2C94C; /* Cor de fundo */
+    color: #000000; /* Cor do texto */
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Estilo do título da seção de destaque */
+.destaque h2 {
+    font-size: 2.5rem; /* Tamanho da fonte */
+    margin-bottom: 20px; /* Margem inferior */
+}
+
+/* Estilo do texto da seção de destaque */
+.destaque p {
+    font-size: 1.2rem; /* Tamanho da fonte */
+    margin-bottom: 20px; /* Margem inferior */
+}
+
+/* Estilo do botão de destaque na seção de destaque */
+.destaque .botao-destaque {
+    display: inline-block; /* Exibição em linha */
+    background-color: #2C3E50; /* Cor de fundo */
+    color: #F2C94C; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 5px; /* Raio da borda */
+    text-decoration: none; /* Sem decoração de texto */
+    transition: all 0.3s ease; /* Transição de animação */
+}
+
+/* Estilo do botão de destaque na seção de destaque quando o mouse está sobre ele */
+.destaque .botao-destaque:hover {
+    background-color: #F2C94C; /* Cor de fundo */
+    color: #2C3E50; /* Cor do texto */
+}
+
+/* Estilo do rodapé */
+.rodapé{
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto */
+    background-color: #63250D; /* Cor de fundo */
+    color: #e4df51; /* Cor do texto */
+    text-align: center; /* Alinhamento do texto */
+    width: 100%; /* Largura */
+    position: absolute; /* Posição absoluta */
+    bottom: 0%; /* Alinhamento inferior */
+}
+
+/* Estilo do botão de cupom */
+.botaoCupom {
+    display: inline-block; /* Exibição em linha */
+    background-color: #2C3E50; /* Cor de fundo */
+    color: #F2C94C; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 5px; /* Raio da borda */
+    text-decoration: none; /* Sem decoração de texto */
+    transition: all 0.3s ease; /* Transição de animação */
+    font-size: large;
+    color: #000000;
+}
+
+/* Estilo do botão de cupom quando o mouse está sobre ele */
+.botaoCupom:hover {
+    background-color: #F2C94C; /* Cor de fundo */
+    color: #2C3E50; /* Cor do texto */
+}
+
+
+/* ########################################################################            NETO          ###################################################################*/
+
+/* ########################################################################            Luiz          ###################################################################*/
+
+    /* designe do form */
+    form {
+        display: flex;
+        flex-direction: none;
+        margin: auto;
+        padding: 10px;
+        background-color: #F2C94C;
+        border: 25px solid #ae5e28;
+        border-radius: 12px;
+    }
+  
+  /* label */
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  /*select */
+  select, input[type="text"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  
+  /* muda o botão de pagar com cartão */
+  input[type="submit"] {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  input[type="text"][readonly] {
+    background-color: #eee;
+    cursor: not-allowed;
+  }
+
+  /* quantidade designey */
+  input[type="number"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100px;
+  }
+
+  .thumbnail {
+    max-width: 200px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+    margin-top: 20px;
+    border: 10px solid #ae5e28;
+    border-radius: 20px;
+  }
+

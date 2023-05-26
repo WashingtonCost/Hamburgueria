@@ -10,11 +10,13 @@
     <link rel="stylesheet" href="CSS/layout.css">
     <link rel="stylesheet" href="CSS/estilo.css">
     <link rel="shortcut icon" type="image/x-icon" href="images/fast-food.png">
-    <script src="neto_formularios/login.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <!-- Define o ícone da página na guia do navegador -->
 </head>
 
 <body class="destaque">
+
     <header class="cabecalho">
         <a href="index.html"><img src="images/logotipoBurgue.png" alt="Logotipo da Hamburgueria do Prazer"></a>
         <h1>Hamburgueria do Prazer</h1>
@@ -34,33 +36,33 @@
                         <label for="password">Senha:</label>
                         <input type="password" id="password" name="password" required>
 
-                        <input type="submit" value="Entrar" onclick="entradamenu()">
-                         
+                        <input type="submit" id="entrar-btn" value="Entrar" onclick="entradamenu()" disabled>>
+
                     </form>
                 </div>
                 <div id="signup-options">
 
                     <p>Ainda não possui uma conta?</p>
-                    
-                    <div class="botao-destaque">
 
-                        <a href="neto_formularios/cadastrar_usuario.html">Cadastrar Usuário</a> |
 
-                        <a href="neto_formularios/cadastrar_funcionario.html">Cadastrar Funcionário</a>
-                    </div>
+
+                    <a href="neto_formularios/cadastrar_usuario.html" class="botao-destaque">Cadastrar Usuário</a> |
+
+                    <a href="neto_formularios/cadastrar_funcionario.html" class="botao-destaque">Cadastrar
+                        Funcionário</a>
                 </div>
 
-                    
+
 
             </section>
         </main>
-
-        <footer class="footer">
-            <p>Hamburgueria do Prazer 2023</p>
-        </footer>
-
     </header>
+    <footer class="footer">
+        <p>Hamburgueria do Prazer 2023</p>
+    </footer>
 
+
+    <script src="/neto_formularios/login.js"></script>
 </body>
 
 </html>
