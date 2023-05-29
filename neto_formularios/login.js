@@ -1,25 +1,27 @@
-function entradamenu (){
-    location.replace("../index.html");
-    
-} 
+document.addEventListener('DOMContentLoaded', function () {
+    var inputs = document.querySelectorAll('#login-form input');
 
-$(document).ready(function() {
-    // Função para habilitar ou desabilitar o botão "Entrar"
-    function atualizarBotaoEntrar() {
-        var username = $("#username").val();
-        var email = $("#email").val();
-        var password = $("#password").val();
+    inputs.forEach(function (input) {
+        input.addEventListener('blur', function () {
+            var username = document.getElementById('username').value;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
 
-        if (username !== "" && email !== "" && password !== "") {
-            $("#entrar-btn").prop("disabled", false);
-        } else {
-            $("#entrar-btn").prop("disabled", true);
-        }
-    }
+            if (username.trim() !== '' && email.trim() !== '' && password.trim() !== '') {
+                document.getElementById('entrar-btn').disabled = false;
+            } else {
+                document.getElementById('entrar-btn').disabled = true;
+            }
+        });
+    });
 
-    // Atualiza o estado do botão ao digitar nos campos
-    $("#username, #email, #password").on("input", function() {
-        atualizarBotaoEntrar();
+    document.getElementById('login-form').addEventListener('submit', function (event) {
+        event.preventDefault(); // Impede o envio do formulário
+
+        // Redireciona para a página "index.html"
+        window.location.href = 'index.html';
+        
     });
 });
+
 

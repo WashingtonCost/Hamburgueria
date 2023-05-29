@@ -21,42 +21,32 @@
         <a href="index.html"><img src="images/logotipoBurgue.png" alt="Logotipo da Hamburgueria do Prazer"></a>
         <h1>Hamburgueria do Prazer</h1>
         <h2>Login</h2>
-
-
-        <main class="principal">
-            <section id="login-section">
-                <div class="card">
-                    <form id="login-form" action="processar_login">
-                        <label for="username">Usuário:</label>
-                        <input type="text" id="username" name="username" required>
-
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-
-                        <label for="password">Senha:</label>
-                        <input type="password" id="password" name="password" required>
-
-                        <input type="submit" id="entrar-btn" value="Entrar" onclick="entradamenu()" disabled>>
-
-                    </form>
-                </div>
-                <div id="signup-options">
-
-                    <p>Ainda não possui uma conta?</p>
-
-
-
-                    <a href="neto_formularios/cadastrar_usuario.html" class="botao-destaque">Cadastrar Usuário</a> |
-
-                    <a href="neto_formularios/cadastrar_funcionario.html" class="botao-destaque">Cadastrar
-                        Funcionário</a>
-                </div>
-
-
-
-            </section>
-        </main>
     </header>
+
+    <main class="principal">
+        <section id="login-section">
+            <div class="card">
+                <form id="login-form" action="index.html">
+                    <label for="username">Usuário:</label>
+                    <input type="text" id="username" name="username" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <input type="submit" id="entrar-btn" value="Entrar" disabled>
+                </form>
+            
+            <div id="signup-options">
+                <p>Ainda não possui uma conta?</p>
+                <a href="neto_formularios/cadastrar_usuario.html" class="botao-destaque">Cadastrar Usuário</a> |
+                <a href="neto_formularios/cadastrar_funcionario.html" class="botao-destaque">Cadastrar Funcionário</a>
+            </div>
+        </section>
+    </main>
+</div>
     <footer class="footer">
         <p>Hamburgueria do Prazer 2023</p>
     </footer>

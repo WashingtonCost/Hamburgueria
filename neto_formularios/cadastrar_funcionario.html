@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastrar Funcionario</title>
+    <title>Cadastrar Funcionário</title>
     <!-- Adiciona os arquivos CSS para o layout e estilo da página -->
     <link rel="stylesheet" href="/CSS/estilo.css">
     <link rel="stylesheet" href="/CSS/form2.css">
@@ -24,7 +24,7 @@
         <a href="cadastrar_usuario.html"><img src="/images/logotipoBurgue.png"
                 alt="Logotipo da Hamburgueria do Prazer"></a>
         <h1>Hamburgueria do Prazer</h1>
-        <h2>Cadastrar Funcionario</h2>
+        <h2>Cadastrar Funcionário</h2>
     </header>
 
     <form class="row g-3" class="row g-3" onsubmit="return previewImage(event)">
@@ -42,6 +42,55 @@
                 Muito bem!
             </div>
         </div>
+
+        <div class="col-md-3">
+            <label for="validationServer07" class="form-label">CPF:</label>
+            <input type="text" class="form-control is-invalid" id="validationServer07"
+                aria-describedby="validationServer07Feedback" required pattern="\d{3}\.\d{3}\.\d{3}-\d{2}">
+            <div id="validationServer07Feedback" class="invalid-feedback">
+                Por favor, insira um CPF válido.
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <label for="validationServer10" class="form-label">Gênero:</label>
+            <select class="form-control is-invalid" id="validationServer10" required>
+              <option value="">Selecione...</option>
+              <option value="masculino">Masculino</option>
+              <option value="feminino">Feminino</option>
+              <option value="outro">Outro</option>
+            </select>
+            <div id="validationServer10Feedback" class="invalid-feedback">
+              Por favor, selecione um gênero.
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <label for="validationServer06" class="form-label">Data de Nascimento:</label>
+            <input type="date" class="form-control is-invalid" id="validationServer06" required>
+            <div id="validationServer06Feedback" class="invalid-feedback">
+                Por favor, insira uma data de nascimento válida.
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <label for="validationServer03" class="form-label">Cidade de Origem:</label>
+            <input type="text" class="form-control is-invalid" id="validationServer03"
+                aria-describedby="validationServer03Feedback" required minlength="10">
+            <div id="validationServer03Feedback" class="invalid-feedback">
+                Por favor, insira uma cidade válida.
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <label for="validationServer05" class="form-label">Número para Contato:</label>
+            <input type="text" class="form-control is-invalid" id="validationServer05"
+                aria-describedby="validationServer05Feedback" required minlength="12" pattern="[0-9]{8}\-?[0-9]{4}">
+            <div id="validationServer05Feedback" class="invalid-feedback">
+                Por favor, insira um número válido.
+            </div>
+        </div>
+
         <div class="col-md-4">
             <label for="exampleFormControlInput1" class="form-label">Email:</label>
             <input type="email" class="form-control is-invalid" id="validationServer03" placeholder="nome@exemplo.com"
@@ -58,24 +107,7 @@
                 Por favor, insira uma senha válida.
             </div>
         </div>
-        <div class="col-md-3">
-            <label for="validationServerUsername" class="form-label">Username da Conta:</label>
-            <div class="input-group has-validation">
-                <input type="text" class="form-control is-invalid" id="validationServerUsername"
-                    aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required minlength="5">
-                <div id="validationServerUsernameFeedback" class="invalid-feedback">
-                    Por favor, insira o username da sua conta.
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <label for="validationServer03" class="form-label">Cidade de Origem:</label>
-            <input type="text" class="form-control is-invalid" id="validationServer03"
-                aria-describedby="validationServer03Feedback" required minlength="10">
-            <div id="validationServer03Feedback" class="invalid-feedback">
-                Por favor, insira uma cidade válida.
-            </div>
-        </div>
+       
         <div class="col-md-3">
             <label for="validationServer04" class="form-label">Cargo:</label>
             <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback"
@@ -91,14 +123,8 @@
                 Por favor, selecione um cargo.
             </div>
         </div>
-        <div class="col-md-3">
-            <label for="validationServer05" class="form-label">Número para Contato:</label>
-            <input type="text" class="form-control is-invalid" id="validationServer05"
-                aria-describedby="validationServer05Feedback" required minlength="12" pattern="[0-9]{8}\-?[0-9]{4}">
-            <div id="validationServer05Feedback" class="invalid-feedback">
-                Por favor, insira um número válido.
-            </div>
-        </div>
+       
+       
         <div class="col-md-4">
             <label for="profilePicture" class="form-label">Foto de Perfil:</label>
             <input type="file" class="form-control" id="profilePicture" accept="image/*" onchange="previewImage(event)">
@@ -127,9 +153,6 @@
         <p>Hamburgueria do Prazer 2023</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
-    <script src="/bootstrap/bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js "></script>
     <script src="perfil.js"></script>
 </body>
+</html>
