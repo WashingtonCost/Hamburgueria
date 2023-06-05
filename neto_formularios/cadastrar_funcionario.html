@@ -45,9 +45,9 @@
 
         <div class="col-md-3">
             <label for="validationServer07" class="form-label">CPF:</label>
-            <input type="text" class="form-control is-invalid" id="validationServer07"
-                aria-describedby="validationServer07Feedback" required pattern="\d{3}\.\d{3}\.\d{3}-\d{2}">
-            <div id="validationServer07Feedback" class="invalid-feedback">
+            <input type="text" class="form-control is-valid" id="validationServer07"
+                aria-describedby="validationServer07Feedback" required pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00">
+            <div id="validationServer07Feedback" class="valid-feedback">
                 Por favor, insira um CPF válido.
             </div>
         </div>
@@ -76,7 +76,7 @@
         <div class="col-md-3">
             <label for="validationServer03" class="form-label">Cidade de Origem:</label>
             <input type="text" class="form-control is-invalid" id="validationServer03"
-                aria-describedby="validationServer03Feedback" required minlength="10">
+                aria-describedby="validationServer03Feedback" required minlength="10" placeholder="Nome Da Cidade">
             <div id="validationServer03Feedback" class="invalid-feedback">
                 Por favor, insira uma cidade válida.
             </div>
@@ -85,7 +85,7 @@
         <div class="col-md-3">
             <label for="validationServer05" class="form-label">Número para Contato:</label>
             <input type="text" class="form-control is-invalid" id="validationServer05"
-                aria-describedby="validationServer05Feedback" required minlength="12" pattern="[0-9]{8}\-?[0-9]{4}">
+                aria-describedby="validationServer05Feedback" required minlength="12" placeholder="(99) 9 9999-9999" pattern="[0-9]{8}\-?[0-9]{4}">
             <div id="validationServer05Feedback" class="invalid-feedback">
                 Por favor, insira um número válido.
             </div>
