@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apoie-nos</title>
+    <link rel="stylesheet" href="CSS/layout.css">
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/fast-food.png">
+    <link rel="stylesheet" href="pagamento.js">
+</head>
+<body class="destaque">
+    <header class="cabecalho">
+        <h1>Apoie-nos</h1>
+        <h3>Divulgação | Doações | Sugestões</h3>
+    </header>
+    <nav class="topnav">
+        <a href="index.html">Menu</a>
+        <a href="lanches.html">Lanches</a>
+        <a href="combos.html">Combos</a>
+        <a href="porcoes.html">Porções</a>
+        <a href="bebida.html">Bebidas</a>
+        <a href="Pedido.html">Pedido</a>
+        <a href="cupoes.html">Cupões de Desconto</a>
+        <a href="chefes.html"style="float: right">Chefs</a>
+        <a href="reserva.html"style="float: right">Reserva</a>
+        <a href="localizacao.html"style="float: right">Localização</a>
+    </nav>
+    <main class="principal"> 
+        
+        <h2>Pagamentos</h2>
+          <form action="/process_payment" method="post">
+            <h3>Divulgação</h3>
+            <img src="images/qrcode_chrome.png" alt="">
+            <h2></h2>
+            <h3>Sugestão</h3>
+
+            <label for="product_price">Hamburgue</label>
+            <input type="text" id="product_price" name="product_price" >
+
+            <label for="product_price">Combo</label>
+            <input type="text" id="product_price" name="product_price" >
+
+            <label for="product_price">Porção</label>
+            <input type="text" id="product_price" name="product_price" >
+
+            <label for="product_price">Bebida</label>
+            <input type="text" id="product_price" name="product_price" >
+
+            <label for="product_price">Lanche</label>
+            <input type="text" id="product_price" name="product_price" >
+
+            <label for="mensagem">Outros</label>
+            <textarea id="mensagem" name="mensagem" maxlength="50" minlength="5" ></textarea>
+            <h3></h3>
+            <h7></h4>
+    
+            <input type="submit" value="Enviar">
+            <h3>Doação</h3>
+              
+            <label for="quantity">Quantidade em R$</label>
+            <input type="number" id="quantity" name="quantity" min="0,1" value="0" minlength="0">
+            <input type="submit" value="Pagar">
+
+
+              
+          </form>
+          
+</div>
+</div>
+
+
+</main>
+<footer class="footer">
+<p>Hamburgueria do Prazer</p>
+</footer>
+</body>
