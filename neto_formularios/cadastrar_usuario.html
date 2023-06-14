@@ -17,7 +17,7 @@
     crossorigin="anonymous">
 </head>
 
-<body class="destaque">
+<body class="destaque" class="form-control">
 
     <!-- Define o cabeçalho da página com o logotipo e o título da hamburgueria -->
     <header class="cabecalho">
@@ -94,7 +94,7 @@
 
         <div class="col-md-4">
             <label for="validationServer05" class="form-label">Número para Contato:</label>
-            <input type="text" class="form-control is-invalid" id="telefone" oninput="formatarTelefone()"
+            <input type="text" class="form-control" id="telefone" oninput="formatarTelefone()"
                 aria-describedby="validationServer05Feedback" required minlength="12"  placeholder="(99) 9 9999-9999">
             <div id="validationServer05Feedback" class="invalid-feedback">
                 Por favor, insira um número válido.
@@ -103,7 +103,7 @@
 
         <div class="col-md-4">
             <label for="exampleFormControlInput1" class="form-label">Email:</label>
-            <input type="email" class="form-control is-invalid" id="email" placeholder="nome@exemplo.com"
+            <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com"
                 required minlength="10">
             <div id="validationServerUsernameFeedback" class="invalid-feedback">
                 Por favor, insira um endereço de email válido.
@@ -111,7 +111,7 @@
         </div>
         <div class="col-auto">
             <label for="inputPassword2" class="form-label">Senha:</label>
-            <input type="password" class="form-control is-invalid" id="inputPassword2" placeholder="Senha" required
+            <input type="password" class="form-control" id="inputPassword2" placeholder="Senha" required
                 minlength="8">
             <div id="validationServerUsernameFeedback" class="invalid-feedback">
                 Por favor, insira uma senha válida.
