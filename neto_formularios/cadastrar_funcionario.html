@@ -17,7 +17,7 @@
 </head>
 
 
-<body class="destaque">
+<body class="destaque" class="form-control">
 
     <!-- Define o cabeçalho da página com o logotipo e o título da hamburgueria -->
     <header class="cabecalho">
@@ -30,14 +30,14 @@
     <form class="row g-3" class="row g-3" onsubmit="return previewImage(event)">
         <div class="col-md-4">
             <label for="validationServer01" class="form-label">Primeiro Nome:</label>
-            <input type="text" class="form-control is-valid" id="validationServer01" value="" required minlength="10">
+            <input type="text" class="form-control" id="validationServer01" value="" required minlength="10">
             <div class="valid-feedback">
                 Muito bem!
             </div>
         </div>
         <div class="col-md-4">
             <label for="validationServer02" class="form-label">Sobrenome:</label>
-            <input type="text" class="form-control is-valid" id="validationServer02" value="" required minlength="10">
+            <input type="text" class="form-control" id="validationServer02" value="" required minlength="10">
             <div class="valid-feedback">
                 Muito bem!
             </div>
@@ -45,7 +45,7 @@
 
         <div class="col-md-3">
             <label for="validationServer07" class="form-label">CPF:</label>
-            <input type="text" class="form-control is-valid" id="validationServer07"
+            <input type="text" class="form-control " id="validationServer07"
                 aria-describedby="validationServer07Feedback" required pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00">
             <div id="validationServer07Feedback" class="valid-feedback">
                 Por favor, insira um CPF válido.
@@ -54,7 +54,7 @@
 
         <div class="col-md-4">
             <label for="validationServer10" class="form-label">Gênero:</label>
-            <select class="form-control is-invalid" id="validationServer10" required>
+            <select class="form-control " id="validationServer10" required>
               <option value="">Selecione...</option>
               <option value="masculino">Masculino</option>
               <option value="feminino">Feminino</option>
@@ -67,7 +67,7 @@
 
         <div class="col-md-3">
             <label for="validationServer06" class="form-label">Data de Nascimento:</label>
-            <input type="date" class="form-control is-invalid" id="validationServer06" required>
+            <input type="date" class="form-control" id="validationServer06" required>
             <div id="validationServer06Feedback" class="invalid-feedback">
                 Por favor, insira uma data de nascimento válida.
             </div>
@@ -75,7 +75,7 @@
 
         <div class="col-md-3">
             <label for="validationServer03" class="form-label">Cidade de Origem:</label>
-            <input type="text" class="form-control is-invalid" id="validationServer03"
+            <input type="text" class="form-control" id="validationServer03"
                 aria-describedby="validationServer03Feedback" required minlength="10" placeholder="Nome Da Cidade">
             <div id="validationServer03Feedback" class="invalid-feedback">
                 Por favor, insira uma cidade válida.
@@ -84,7 +84,7 @@
 
         <div class="col-md-3">
             <label for="validationServer05" class="form-label">Número para Contato:</label>
-            <input type="text" class="form-control is-invalid" id="validationServer05"
+            <input type="text" class="form-control" id="validationServer05"
                 aria-describedby="validationServer05Feedback" required minlength="12" placeholder="(99) 9 9999-9999" pattern="[0-9]{8}\-?[0-9]{4}">
             <div id="validationServer05Feedback" class="invalid-feedback">
                 Por favor, insira um número válido.
@@ -93,7 +93,7 @@
 
         <div class="col-md-4">
             <label for="exampleFormControlInput1" class="form-label">Email:</label>
-            <input type="email" class="form-control is-invalid" id="validationServer03" placeholder="nome@exemplo.com"
+            <input type="email" class="form-control" id="validationServer03" placeholder="nome@exemplo.com"
                 required minlength="10">
             <div id="validationServerUsernameFeedback" class="invalid-feedback">
                 Por favor, insira um endereço de email válido.
@@ -101,7 +101,7 @@
         </div>
         <div class="col-auto">
             <label for="inputPassword2" class="form-label">Senha:</label>
-            <input type="password" class="form-control is-invalid" id="inputPassword2" placeholder="Senha" required
+            <input type="password" class="form-control" id="inputPassword2" placeholder="Senha" required
                 minlength="8">
             <div id="validationServerUsernameFeedback" class="invalid-feedback">
                 Por favor, insira uma senha válida.
@@ -110,7 +110,7 @@
        
         <div class="col-md-3">
             <label for="validationServer04" class="form-label">Cargo:</label>
-            <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback"
+            <select class="form-select " id="validationServer04" aria-describedby="validationServer04Feedback"
                 required>
                 <option selected disabled value="">Escolha...</option>
                 <option>Atendente</option>

@@ -211,3 +211,15 @@ body{
     border-radius: 20px;
   }
 
+  .form-control:invalid {
+    border-color: #f41105;
+  }
+  
+  .form-control:invalid:focus {
+    border-color: #ef1005;
+  }
+  
+  .form-control:valid {
+    border-color: #08e622;
+  }
+
