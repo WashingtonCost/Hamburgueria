@@ -30,14 +30,14 @@
     <form class="row g-3" onsubmit="return validarFormulario(event) " id="login-form">
         <div class="col-md-4">
             <label for="validationServer01" class="form-label">Primeiro Nome:</label>
-            <input type="text" class="form-control is-valid" id="nome" value="" required minlength="10">
+            <input type="text" class="form-control" id="nome" value="" required minlength="10">
             <div class="valid-feedback">
                 Muito bem!
             </div>
         </div>
         <div class="col-md-4">
             <label for="validationServer02" class="form-label">Sobrenome:</label>
-            <input type="text" class="form-control is-valid" id="validationServer02" value="" required minlength="10">
+            <input type="text" class="form-control" id="validationServer02" value="" required minlength="10">
             <div class="valid-feedback">
                 Muito bem!
             </div>
@@ -46,7 +46,7 @@
         <div class="col-md-3">
             <label for="validationServerUsername" class="form-label">Username da Conta:</label>
             <div class="input-group has-validation">
-                <input type="text" class="form-control is-invalid" id="validationServerUsername"
+                <input type="text" class="form-control" id="validationServerUsername"
                     aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required minlength="5">
                 <div id="validationServerUsernameFeedback" class="invalid-feedback">
                     Por favor, insira o username da sua conta.
@@ -56,7 +56,7 @@
 
         <div class="col-md-4">
             <label for="validationServer09" class="form-label">Data de Nascimento:</label>
-            <input type="date" class="form-control is-invalid" id="validationServer09" required>
+            <input type="date" class="form-control" id="validationServer09" required>
             <div id="validationServer09Feedback" class="invalid-feedback">
               Por favor, insira uma data de nascimento válida.
             </div>
@@ -64,7 +64,7 @@
 
         <div class="col-md-4">
             <label for="validationServer08" class="form-label">CPF:</label>
-            <input type="text" class="form-control is-invalid" id="cpf"
+            <input type="text" class="form-control" id="cpf"
                 aria-describedby="validationServer08Feedback" required minlength="11" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00">
             <div id="validationServer08Feedback" class="invalid-feedback">
                 Por favor, insira um CPF válido.
@@ -73,7 +73,7 @@
 
         <div class="col-md-4">
             <label for="validationServer07" class="form-label">Cidade de Origem:</label>
-            <input type="text" class="form-control is-invalid" id="validationServer07" required minlength="5" placeholder="Nome Da Cidade">
+            <input type="text" class="form-control " id="validationServer07" required minlength="5" placeholder="Nome Da Cidade">
             <div id="validationServer07Feedback" class="invalid-feedback">
                 Por favor, insira uma cidade válida.
             </div>
@@ -81,7 +81,7 @@
        
         <div class="col-md-4">
             <label for="validationServer10" class="form-label">Gênero:</label>
-            <select class="form-control is-invalid" id="validationServer10" required>
+            <select class="form-control " id="validationServer10" required>
               <option value="">Selecione...</option>
               <option value="masculino">Masculino</option>
               <option value="feminino">Feminino</option>
@@ -142,7 +142,7 @@
         </div>    
     </form>
 
-    <!-- Adiciona os arquivos JavaScript para validação do formulário -->
+    
     <script src="/JS/validacaoFormulario.js"></script>
 
 </body>
