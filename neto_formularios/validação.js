@@ -1,52 +1,85 @@
-function validarFormulario() {
-  var inputs = document.querySelectorAll('#login-form input');
-  var nome = document.getElementById('nome').value;
-  var email = document.getElementById('email').value;
-  var cpf = document.getElementById('cpf').value;
+// Função para formatar o CPF no padrão 000.000.000-00
+function formatarCPF() {
+  const cpfInput = document.getElementById('cpf');
+  let cpf = cpfInput.value;
 
-  // Percorrer os inputs para adicionar o evento blur
-  inputs.forEach(function (input) {
-    input.addEventListener('blur', function () {
-      if (input.value.trim() === '') {
-        alert('O campo "' + input.getAttribute('name') + '" é obrigatório.');
-      }
-    });
-  });
+  // Remove todos os caracteres que não são dígitos
+  cpf = cpf.replace(/\D/g, '');
 
-  // Verificar se o campo nome não está vazio
-  if (nome.trim() === '') {
-    alert('O campo "Nome" é obrigatório.');
-    return false;
-  }
+  // Adiciona a máscara no CPF
+  cpf = cpf.replace(/(\d{3})(\d)/, '$1.$2');
+  cpf = cpf.replace(/(\d{3})(\d)/, '$1.$2');
+  cpf = cpf.replace(/(\d{3})(\d{1,2})$/, '$1-$2');
 
-  // Verificar se o campo e-mail é um e-mail válido
-  var emailRegex = /^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/;
-  if (!emailRegex.test(email)) {
-    alert('O campo "E-mail" deve ser um endereço de e-mail válido.');
-    return false;
-  }
+  // Atualiza o valor do input
+  cpfInput.value = cpf;
 
-  if (!validarCPF(cpf)) {
-    alert('O campo "CPF" deve conter um CPF válido.');
-    return false;
-  }
-
-
-  return true;
 }
 
 
-window.onload = function () {
-  var form = document.getElementById('login-form');
-  var botao = document.getElementById('botaoBuscar');
+// Função para formatar o telefone no padrão (99) 9 9999-9999
+function formatarTelefone() {
+  const telefoneInput = document.getElementById('telefone');
+  let telefone = telefoneInput.value;
 
-  botao.addEventListener('click', function (event) {
-    event.preventDefault(); // Impede o envio padrão do formulário
-    if (validarFormulario()) {
-      form.submit(); // Envia o formulário manualmente se a validação passar
+  // Remove todos os caracteres que não são dígitos
+  telefone = telefone.replace(/\D/g, '');
+
+  // Adiciona a máscara no telefone
+  telefone = telefone.replace(/^(\d{2})(\d)/g, '($1) $2');
+  telefone = telefone.replace(/(\d)(\d{4})$/, '$1-$2');
+
+  // Atualiza o valor do input
+  telefoneInput.value = telefone;
+}
+
+// Função para validar o formulário
+function validarFormulario(event) {
+  const inputs = document.querySelectorAll('input');
+  let formValido = true;
+
+  inputs.forEach((input) => {
+    // Remove a classe de validação do Bootstrap
+    input.classList.remove('is-invalid');
+    input.classList.remove('is-valid');
+
+    // Valida o campo
+    if (!input.checkValidity()) {
+      // Adiciona a classe de inválido do Bootstrap
+      input.classList.add('is-invalid');
+      formValido = false;
+    } else {
+      // Adiciona a classe de válido do Bootstrap
+      input.classList.add('is-valid');
     }
   });
-};
+
+  if (!formValido) {
+    event.preventDefault();
+  }
+}
+
+// Adiciona o ouvinte de evento a todos os inputs para validar quando o foco sair
+const inputs = document.querySelectorAll('input');
+
+inputs.forEach((input) => {
+  input.addEventListener('blur', () => {
+    // Remove a classe de validação do Bootstrap
+    input.classList.remove('is-invalid');
+    input.classList.remove('is-valid');
+
+    // Valida o campo
+    if (!input.checkValidity()) {
+      // Adiciona a classe de inválido do Bootstrap
+      input.classList.add('is-invalid');
+    } else {
+      // Adiciona a classe de válido do Bootstrap
+      input.classList.add('is-valid');
+    }
+  });
+});
+
+
 
 
   

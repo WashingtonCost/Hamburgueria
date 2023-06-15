@@ -17,7 +17,7 @@
     crossorigin="anonymous">
 </head>
 
-<body class="destaque" class="form-control">
+<body class="destaque">
 
     <!-- Define o cabeçalho da página com o logotipo e o título da hamburgueria -->
     <header class="cabecalho">
@@ -65,7 +65,7 @@
         <div class="col-md-4">
             <label for="validationServer08" class="form-label">CPF:</label>
             <input type="text" class="form-control" id="cpf"
-                aria-describedby="validationServer08Feedback" required minlength="11" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00">
+                aria-describedby="validationServer08Feedback" required minlength="14" maxlength="14" placeholder="000.000.000-00" oninput="formatarCPF()">
             <div id="validationServer08Feedback" class="invalid-feedback">
                 Por favor, insira um CPF válido.
             </div>
@@ -94,8 +94,8 @@
 
         <div class="col-md-4">
             <label for="validationServer05" class="form-label">Número para Contato:</label>
-            <input type="text" class="form-control" id="telefone" oninput="formatarTelefone()"
-                aria-describedby="validationServer05Feedback" required minlength="12"  placeholder="(99) 9 9999-9999">
+            <input type="text" class="form-control" id="telefone" aria-describedby="validationServer05Feedback"
+                required minlength="13" maxlength="15" placeholder="(99) 9 9999-9999" oninput="formatarTelefone()">
             <div id="validationServer05Feedback" class="invalid-feedback">
                 Por favor, insira um número válido.
             </div>
@@ -142,8 +142,8 @@
         </div>    
     </form>
 
-    
-    <script src="/JS/validacaoFormulario.js"></script>
+    <script src="perfil.js"></script>
+    <script src="/neto_formularios/validação.js"></script>
 
 </body>
 

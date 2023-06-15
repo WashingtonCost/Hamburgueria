@@ -9,6 +9,8 @@
     <!-- Adiciona os arquivos CSS para o layout e estilo da página -->
     <link rel="stylesheet" href="CSS/layout.css">
     <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="stylesheet" href="CSS/form2.css">
+    <link rel="stylesheet" href="CSS/style.css">
     <link rel="shortcut icon" type="image/x-icon" href="images/fast-food.png">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
@@ -23,22 +25,28 @@
         <h2>Login</h2>
     </header>
 
-    <main class="principal" >
+    <main class="principal">
         <section id="login-section">
             <div class="card">
                 <form id="login-form" action="index.html">
                     <label for="username">Usuário:</label>
-                    <input type="text" id="username" name="username" required>
+                    <input type="text"  class="form-control" id="username" name="username" required minlength="3" maxlength="20"
+                        pattern="[a-zA-Z0-9]+" title="O nome de usuário deve conter apenas letras e números entre 3 e 20 caracteres.">
 
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email"  class="form-control" id="email" name="email" required
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                        title="Por favor, insira um endereço de email válido">
 
                     <label for="password">Senha:</label>
-                    <input type="password" id="password" name="password" required>
+                    <input type="password"  class="form-control" id="password" name="password" required minlength="6" maxlength="20"
+                        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{6,20}$"
+                        title="A senha deve conter entre 6 e 20 caracteres, pelo menos uma letra maiúscula, uma letra minúscula e um número.">
 
                     <input type="submit" id="entrar-btn" value="Entrar" disabled>
                 </form>
-            
+            </div>
+
             <div id="signup-options">
                 <p>Ainda não possui uma conta?</p>
                 <a href="neto_formularios/cadastrar_usuario.html" class="botao-destaque">Cadastrar Usuário</a> |
@@ -46,11 +54,10 @@
             </div>
         </section>
     </main>
-</div>
+
     <footer class="footer">
         <p>Hamburgueria do Prazer 2023</p>
     </footer>
-
 
     <script src="/neto_formularios/login.js"></script>
 </body>

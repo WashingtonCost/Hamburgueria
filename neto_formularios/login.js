@@ -1,18 +1,17 @@
-document.addEventListener('DOMContentLoaded', function () {
-    var inputs = document.querySelectorAll('#login-form input');
-
-    inputs.forEach(function (input) {
-        input.addEventListener('blur', function () {
-            var username = document.getElementById('username').value;
-            var email = document.getElementById('email').value;
-            var password = document.getElementById('password').value;
-
-            if (username.trim() !== '' && email.trim() !== '' && password.trim() !== '') {
-                document.getElementById('entrar-btn').disabled = false;
-            } else {
-                document.getElementById('entrar-btn').disabled = true;
+$(document).ready(function () {
+    // Habilita o botão de entrar quando todos os campos forem preenchidos corretamente
+    $('#login-form input').on('keyup change', function () {
+        var empty = false;
+        $('#login-form input').each(function () {
+            if ($(this).val() === '') {
+                empty = true;
             }
         });
+        if (empty) {
+            $('#entrar-btn').attr('disabled', 'disabled');
+        } else {
+            $('#entrar-btn').removeAttr('disabled');
+        }
     });
 
     document.getElementById('login-form').addEventListener('submit', function (event) {
@@ -23,5 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
         
     });
 });
+
+
 
 
