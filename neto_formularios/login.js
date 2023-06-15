@@ -17,7 +17,7 @@ $(document).ready(function () {
     document.getElementById('login-form').addEventListener('submit', function (event) {
         event.preventDefault(); // Impede o envio do formulário
 
-        // Redireciona para a página "index.html"
+        // Redireciona para a página "index.html" menu
         window.location.href = 'index.html';
         
     });
