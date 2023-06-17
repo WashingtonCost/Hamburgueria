@@ -7,6 +7,7 @@
     <title>Pagamentos</title>
     <link rel="stylesheet" href="/CSS/layout.css">
     <link rel="stylesheet" href="/CSS/estilo.css">
+    <link rel="stylesheet" href="/CSS/form2.css">
     <link rel="shortcut icon" type="image/x-icon" href="/images/fast-food.png">
 </head>
 <body class="destaque">
@@ -28,12 +29,14 @@
         <a href="/localizacao.html"style="float: right">Localização</a>
     </nav>
     <main class="principal"> 
+      
+      <h1> </h1>
         
-        <h2>Pagamentos</h2>
-          <form action="/process_payment" method="post">
-            <label for="product_name">Selecione o Hamburgue:</label>
-            <select id="product_name" name="product_name">
-              <option value=" "> </option>
+      <form class="row g-3" class="row g-3" onsubmit="return previewImage(event)">
+            
+            <label for="category1-select">Hamburgues:</label>
+            <select id="category1-select">
+              <option value="">Selecione...</option>
               <option value="BurgueDia">Dia: Prazer em Dobro</option>
               <option value="BurgueMes">Mês: O Tamanho Importa</option>
               <option value="BurguePrazer">X-Burger do Prazer</option>
@@ -41,66 +44,55 @@
               <option value="BurgueEggplosao">X-Eggplosão</option>
               <option value="BurgueTudoNela">X-TudoNela</option>
               <option value="BurgueVege">Veggie Delícia</option>
-              </select>
-
-              <label for="quantity">Quantidade:</label>
-            <input type="number" id="quantity" name="quantity" min="1" value="1">
-
-              <label for="product_name">Selecione um Combo:</label>
-            <select id="product_name" name="product_name">
-              <option value=" "> </option>
+            </select>
+            
+            <label for="category2-select">Bebidas:</label>
+            <select id="category2-select">
+              <option value="">Selecione...</option>
+              <option value="Uva">Suco de Uva</option>
+              <option value="Abacaxi">Suco de Abacaxi</option>
+              <option value="Maracuja">Suco de Maracuja</option>
+              <option value="Morango">Suco de Morango</option>
+              <option value="Coca_Cola">Refrigerante: Coca Cola 2L</option>
+              <option value="Coca_Lata">Refrigerante: Coca 500ml</option>
+              <option value="H2O">Refrigerante: H2O</option>
+              <option value="Guarana_Lata">Refrigerante: Guaraná 500ml</option>
+              <option value="Skol">Skol 350ml</option>
+            </select>
+            
+            <label for="category3-select">Porções:</label>
+            <select id="category3-select">
+              <option value="">Selecione...</option>
+              <option value="PorcaoPrazer">Porção: Prazer Explosivo de Batata</option>
+              <option value="PorcaoCalabreza">Porção: CalabreZzzza da Noite</option>
+              <option value="PorcaoFrango">Porção: Franguinho Crocante do Prazer</option>
+              <option value="PorcaoNacho">Porção: Nacho Problema</option>
+            </select>
+            
+            <label for="category4-select">Combos:</label>
+            <select id="category4-select">
+              <option value="">Selecione...</option>
               <option value="ComboCasal">Combo: Casal</option>
               <option value="ComboFamilia">Combo: Familia</option>
               <option value="ComboGiga">Combo: X-Giga</option>
               <option value="ComboBacon">Combo: X-Bacon</option>
               <option value="ComboCheese">Combo: X-Cheese</option>
               <option value="ComboDuplo">Combo: X-Duplo</option>
-              </select>
-
-              <label for="quantity">Quantidade:</label>
-            <input type="number" id="quantity" name="quantity" min="1" value="1">
-
-              <label for="product_name">Selecione uma Porção:</label>
-            <select id="product_name" name="product_name">
-              <option value=" "> </option>
-              <option value="PorcaoCamarao">Porção: Camarão Satisfeito</option>
-              <option value="PorcaoPrazer">Porção: Prazer Explosivo de Batata</option>
-              <option value="PorcaoCalabreza">Porção: CalabreZzzza da Noite</option>
-              <option value="PorcaoFrango">Porção: Franguinho Crocante do Prazer</option>
-              <option value="PorcaoNacho">Porção: Nacho Problema</option>
-              </select>
-
-              <label for="quantity">Quantidade:</label>
-            <input type="number" id="quantity" name="quantity" min="1" value="1">
-
-              <label for="product_name">Selecione uma Bebida:</label>
-            <select id="product_name" name="product_name">
-              <option value=" "> </option>
-              <option value="Laranja">Suco de Laranja</option>
-              <option value="Uva">Suco de Uva</option>
-              <option value="Abacaxi">Suco de Abacaxi</option>
-              <option value="Maracuja">Suco de Maracuja</option>
-              <option value="Morango">Suco de Morango</option>
-              <option value="Coca_Cola">Refrigerante: Coca Cola</option>
-              <option value="Coca_Lata">Refrigerante: Coca Lata</option>
-              <option value="H2O">Refrigerante: H2O</option>
-              <option value="Guarana">Refrigerante: Guaraná</option>
-              <option value="Guarana_Lata">Refrigerante: Guaraná Lata</option>
-              </select>
-
-            <label for="quantity">Quantidade:</label>
-            <input type="number" id="quantity" name="quantity" min="1" value="1">
-
-            <label for="produto_name">Selecione um Cupon:</label>
-            <select id="produto_name" name="produto_name">
-              <option value=" "> </option>
-              <option value="10CONTO">10CONTO</option>
-              <option value="20CONTO">20CONTO</option>
-              <option value="30CONTO">30CONTO</option>
             </select>
-            <label for="product_price">Preço Total:</label>
-            <input type="text" id="product_price" name="product_price" readonly>
-            <img src="/images/QRcodePix.jpeg" alt="">
+            
+            <label for="discount-select">Cupons:</label>
+            <select id="discount-select">
+              <option value="0">Nenhum Desconto</option>
+              <option value="5">5% de Desconto</option>
+              <option value="10">10% de Desconto</option>
+              <option value="15">15% de Desconto</option>
+            </select>
+            
+            <h3>Total: <span id="total">R$ 0.00</span></h3>
+
+            <script src="pagamentos.js"></script>
+
+            <img src="/images/QRcodePixBurgue.jpg" alt="">
             <input type="submit" value="Pagar com cartão de crédito">
           </form>
           
