@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favconBurguer212 gr.png"type="image/x-icon">
-    <link rel="stylesheet" href="CSS/layout.css">
-    <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="stylesheet" href="/CSS/layout.css">
+    <link rel="stylesheet" href="/CSS/estilo.css">
     <link rel="shortcut icon" type="image/x-icon" href="images/fast-food.png">
     <title>Pedidos</title>
 </head>
@@ -18,15 +18,15 @@
     </header>
 
     <nav class="topnav">
-        <a href="index.html">Menu</a>
-        <a href="combos.html">Combos</a>
-        <a href="porcoes.html">Porção</a>
-        <a href="bebida.html">Bebidas</a>
-        <a href="cupoes.html">Cupões de Desconto</a>
-        <a href="chefes.html" style="float: right">Chefs</a>
-        <a href="reserva.html"style="float: right">Reserva</a>
-        <a href="Luiz_Formularios/apoie-nos.html"style="float: right">Apoie-nos</a>
-        <a href="localizacao.html"style="float: right">Localização</a>
+        <a href="/index.html">Menu</a>
+        <a href="/combos.html">Combos</a>
+        <a href="/porcoes.html">Porção</a>
+        <a href="/bebida.html">Bebidas</a>
+        <a href="/cupoes.html">Cupões de Desconto</a>
+        <a href="/chefes.html" style="float: right">Chefs</a>
+        <a href="/Washington_formulario/reserva.html"style="float: right">Reserva</a>
+        <a href="/Luiz_Formularios/apoie-nos.html"style="float: right">Apoie-nos</a>
+        <a href="/localizacao.html"style="float: right">Localização</a>
     </nav>
 
 
@@ -42,8 +42,10 @@
 
     <label for="product_price">Bairro:</label>
     <input type="text" id="bairro" name="bairro" maxlength="20" minlength="10" required>
-    
 
+    <label for="product_price">Numero da Casa:</label>
+    <input type="text" id>
+    
 
     <label for="product_name">Cupom:</label>
             <select id="product_name" name="product_name">
@@ -107,8 +109,25 @@
     <label for="mensagem">Complemento:</label>
     <textarea id="mensagem" name="mensagem" maxlength="20" minlength="10" required></textarea>
 
+    <!DOCTYPE html>
+<html>
+<head>
+  <title>Formulário de Contato</title>
+  <script>
+    function exibirMensagem() {
+      alert("O pedido foi enviado com sucesso!");
+    }
+  </script>
+</head>
+<body>
+  <form>
+    <!-- Seus campos de formulário aqui -->
     
-    <input type="submit" value="Enviar">
+    <input type="submit" value="Enviar" onclick="exibirMensagem()">
+  </form>
+</body>
+</html>
+
   </form>
 </main>
 </div>
