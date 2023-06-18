@@ -15,3 +15,10 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 Geneva, Verdana, sans-serif; /* Define a família de fontes */
 }
 
+.linkintaburgue {
+color: #0a0a0a; /* Define a cor do texto como #0a0a0a */
+padding: 0px; /* Define o preenchimento de 0px ao redor do texto */
+font-size: xx-large; /* Define o tamanho da fonte como xx-large */
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 
+Geneva, Verdana, sans-serif; /* Define a família de fontes */
+}
