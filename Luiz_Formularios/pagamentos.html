@@ -93,7 +93,23 @@
             <script src="pagamentos.js"></script>
 
             <img src="/images/QRcodePixBurgue.jpg" alt="">
-            <input type="submit" value="Pagar com cartão de crédito">
+            <html>
+<head>
+  <title>Formulário de Contato</title>
+  <script>
+    function exibirMensagem() {
+      alert("O pedido foi pago com sucesso!");
+    }
+  </script>
+</head>
+<body>
+  <form>
+    <!-- Seus campos de formulário aqui -->
+    
+    <input type="submit" value="Pagamento" onclick="exibirMensagem()">
+  </form>
+</body>
+</html>
           </form>
           
 </div>
