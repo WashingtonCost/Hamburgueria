@@ -32,10 +32,10 @@
       
       <h1> </h1>
         
-      <form class="row g-3" class="row g-3" onsubmit="return previewImage(event)">
+      <form class="row g-3" class="row g-3" onsubmit="return previewImage(event)" action="/conexao/pagamento.php" method="post">
             
             <label for="category1-select">Hamburgues:</label>
-            <select id="category1-select">
+            <select name = 'hamburgue' id="category1-select">
               <option value="">Selecione...</option>
               <option value="BurgueDia">Dia: Prazer em Dobro</option>
               <option value="BurgueMes">Mês: O Tamanho Importa</option>
@@ -47,7 +47,7 @@
             </select>
             
             <label for="category2-select">Bebidas:</label>
-            <select id="category2-select">
+            <select name = 'bebida' id="category2-select">
               <option value="">Selecione...</option>
               <option value="Uva">Suco de Uva</option>
               <option value="Abacaxi">Suco de Abacaxi</option>
@@ -61,7 +61,7 @@
             </select>
             
             <label for="category3-select">Porções:</label>
-            <select id="category3-select">
+            <select name = 'pocao' id="category3-select">
               <option value="">Selecione...</option>
               <option value="PorcaoPrazer">Porção: Prazer Explosivo de Batata</option>
               <option value="PorcaoCalabreza">Porção: CalabreZzzza da Noite</option>
@@ -70,7 +70,7 @@
             </select>
             
             <label for="category4-select">Combos:</label>
-            <select id="category4-select">
+            <select name = 'combo' id="category4-select">
               <option value="">Selecione...</option>
               <option value="ComboCasal">Combo: Casal</option>
               <option value="ComboFamilia">Combo: Familia</option>
@@ -81,7 +81,7 @@
             </select>
             
             <label for="discount-select">Cupons:</label>
-            <select id="discount-select">
+            <select name = 'cupon' id="discount-select">
               <option value="0">Nenhum Desconto</option>
               <option value="5">5% de Desconto</option>
               <option value="10">10% de Desconto</option>
