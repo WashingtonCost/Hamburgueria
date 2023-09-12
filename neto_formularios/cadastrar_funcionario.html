@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastrar Funcionário</title>
     <!-- Adiciona os arquivos CSS para o layout e estilo da página -->
-    <link rel="stylesheet" href="/CSS/estilo.css">
-    <link rel="stylesheet" href="/CSS/form2.css">
-    <link rel="stylesheet" href="/CSS/style.css">
-    <link rel="shortcut icon" type="/image/x-icon" href="/images/fast-food.png">
+    <link rel="stylesheet" href="../CSS/estilo.css">
+    <link rel="stylesheet" href="../CSS/form2.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="shortcut icon" type="/image/x-icon" href="../images/fast-food.png">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
@@ -21,23 +21,23 @@
 
     <!-- Define o cabeçalho da página com o logotipo e o título da hamburgueria -->
     <header class="cabecalho">
-        <a href="cadastrar_usuario.html"><img src="/images/logotipoBurgue.png"
+        <a href="cadastrar_usuario.html"><img src="../images/logotipoBurgue.png"
                 alt="Logotipo da Hamburgueria do Prazer"></a>
         <h1>Hamburgueria do Prazer</h1>
         <h2>Cadastrar Funcionário</h2>
     </header>
 
-    <form class="row g-3" class="row g-3" onsubmit="return previewImage(event)">
+    <form class="row g-3" class="row g-3" onsubmit="return previewImage(event)" action="/Hamburgueria/conexao/cadastrofun.php" method="post">
         <div class="col-md-4">
             <label for="validationServer01" class="form-label">Primeiro Nome:</label>
-            <input type="text" class="form-control" id="validationServer01" value="" required minlength="10">
+            <input name = 'nome' type="text" class="form-control" id="validationServer01" value="" required minlength="3">
             <div class="valid-feedback">
                 Muito bem!
             </div>
         </div>
         <div class="col-md-4">
             <label for="validationServer02" class="form-label">Sobrenome:</label>
-            <input type="text" class="form-control" id="validationServer02" value="" required minlength="10">
+            <input name = 'sobrenome' type="text" class="form-control" id="validationServer02" value="" required minlength="10">
             <div class="valid-feedback">
                 Muito bem!
             </div>
@@ -45,7 +45,7 @@
 
         <div class="col-md-4">
             <label for="validationServer08" class="form-label">CPF:</label>
-            <input type="text" class="form-control" id="cpf" aria-describedby="validationServer08Feedback" required
+            <input name = 'cpf' type="text" class="form-control" id="cpf" aria-describedby="validationServer08Feedback" required
                 minlength="14" maxlength="14" placeholder="000.000.000-00" oninput="formatarCPF()">
             <div id="validationServer08Feedback" class="invalid-feedback">
                 Por favor, insira um CPF válido.
@@ -54,7 +54,7 @@
 
         <div class="col-md-4">
             <label for="validationServer10" class="form-label">Gênero:</label>
-            <select class="form-control " id="validationServer10" required>
+            <select name = 'genero' class="form-control " id="validationServer10" required>
                 <option value="">Selecione...</option>
                 <option value="masculino">Masculino</option>
                 <option value="feminino">Feminino</option>
@@ -67,7 +67,7 @@
 
         <div class="col-md-3">
             <label for="validationServer06" class="form-label">Data de Nascimento:</label>
-            <input type="date" class="form-control" id="validationServer06" required>
+            <input name = 'datanasc' type="date" class="form-control" id="validationServer06" required>
             <div id="validationServer06Feedback" class="invalid-feedback">
                 Por favor, insira uma data de nascimento válida.
             </div>
@@ -75,7 +75,7 @@
 
         <div class="col-md-3">
             <label for="validationServer03" class="form-label">Cidade de Origem:</label>
-            <input type="text" class="form-control" id="validationServer03"
+            <input name = 'cidade' type="text" class="form-control" id="validationServer03"
                 aria-describedby="validationServer03Feedback" required minlength="10" placeholder="Nome Da Cidade">
             <div id="validationServer03Feedback" class="invalid-feedback">
                 Por favor, insira uma cidade válida.
@@ -84,7 +84,7 @@
 
         <div class="col-md-4">
             <label for="validationServer05" class="form-label">Número para Contato:</label>
-            <input type="text" class="form-control" id="telefone" aria-describedby="validationServer05Feedback" required
+            <input name = 'numero' type="text" class="form-control" id="telefone" aria-describedby="validationServer05Feedback" required
                 minlength="13" maxlength="15" placeholder="(99) 9 9999-9999" oninput="formatarTelefone()">
             <div id="validationServer05Feedback" class="invalid-feedback">
                 Por favor, insira um número válido.
@@ -93,7 +93,7 @@
 
         <div class="col-md-4">
             <label for="exampleFormControlInput1" class="form-label">Email:</label>
-            <input type="email" class="form-control" id="validationServer03" placeholder="nome@exemplo.com" required
+            <input name = 'email' type="email" class="form-control" id="validationServer03" placeholder="nome@exemplo.com" required
                 minlength="10">
             <div id="validationServerUsernameFeedback" class="invalid-feedback">
                 Por favor, insira um endereço de email válido.
@@ -101,7 +101,7 @@
         </div>
         <div class="col-auto">
             <label for="inputPassword2" class="form-label">Senha:</label>
-            <input type="password" class="form-control" id="inputPassword2" placeholder="Senha" required minlength="8">
+            <input name = 'senha' type="password" class="form-control" id="inputPassword2" placeholder="Senha" required minlength="8">
             <div id="validationServerUsernameFeedback" class="invalid-feedback">
                 Por favor, insira uma senha válida.
             </div>
@@ -109,7 +109,7 @@
 
         <div class="col-md-3">
             <label for="validationServer04" class="form-label">Cargo:</label>
-            <select class="form-select " id="validationServer04" aria-describedby="validationServer04Feedback" required>
+            <select name = 'cargo' class="form-select " id="validationServer04" aria-describedby="validationServer04Feedback" required>
                 <option selected disabled value="">Escolha...</option>
                 <option>Atendente</option>
                 <option>Cozinheiro</option>
