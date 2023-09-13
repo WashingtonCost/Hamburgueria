@@ -4,7 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
    
     
-    $nome =  $_POST["nome"];
+$nome =  $_POST["nome"];
 $sobrenome = $_POST["sobrenome"];
 $cpf = $_POST["cpf"];
 $genero = $_POST["genero"];
