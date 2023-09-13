@@ -27,7 +27,7 @@
         <h2>Cadastrar Usuário</h2>
     </header>
 
-    <form class="row g-3" onsubmit="return validarFormulario(event) " id="login-form" action="/Hamburgueria/conexao/cadastrousuario.php" method="post">
+    <form class="row g-3" onsubmit="return validarFormulario(event) " id="login-form" action="/Hamburgueria/conexao/cadastrarusuario.php" method="post">
         <div class="col-md-4">
             <label for="validationServer01" class="form-label">Primeiro Nome:</label>
             <input name = 'nome' type="text" class="form-control" id="nome" value="" required minlength="3">
@@ -46,7 +46,7 @@
         <div class="col-md-3">
             <label for="validationServerUsername" class="form-label">Username da Conta:</label>
             <div class="input-group has-validation">
-                <input name = 'username'type="text" class="form-control" id="validationServerUsername"
+                <input name = 'username' type="text" class="form-control" id="validationServerUsername"
                     aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required minlength="5">
                 <div id="validationServerUsernameFeedback" class="invalid-feedback">
                     Por favor, insira o username da sua conta.
@@ -111,7 +111,7 @@
         </div>
         <div class="col-auto">
             <label for="inputPassword2" class="form-label">Senha:</label>
-            <input type="password" class="form-control" id="inputPassword2" placeholder="Senha" required
+            <input name = 'senha' type="password" class="form-control" id="inputPassword2" placeholder="Senha" required
                 minlength="8">
             <div id="validationServerUsernameFeedback" class="invalid-feedback">
                 Por favor, insira uma senha válida.

@@ -5,17 +5,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
    
     
 $nome =  $_POST["nome"];
-$nome =  $_POST["sobrenome"];
+$sobrenome =  $_POST["sobrenome"];
 $datanasc = $_POST["datanasc"];
+$telefone = $_POST["telefone"];
+$username = $_POST["username"];
 $genero = $_POST["genero"];
 $cidade = $_POST["cidade"];
 $numero = $_POST["telefone"];
 $email = $_POST["email"];
 $senha = $_POST["senha"];
-$cargo = $_POST["cargo"];
-$username = $_POST["username"];
+$cpf = $_POST["cpf"];
 
-$sql = "INSERT INTO funcionario ( usu_nome, usu_sobrenome, usu_data_nascimento, usu_senha, usu_cpf, usu_genero, usu_telefone, usu_email, usu_cidade, use_username,) values ( '$nome', '$sobrenome', '$datanasc', '$senha', '$cpf', '$genero', '$telefone', '$email', '$cidade', '$username',)";
+$sql = "INSERT INTO usuario ( usu_nome, usu_sobrenome, usu_username, usu_data_nascimento, usu_cpf, usu_cidade, usu_genero, usu_telefone, usu_email, usu_senha ) values ( '$nome', '$sobrenome', '$username', '$datanasc', '$cpf', '$cidade', '$genero', '$telefone', '$email', '$senha')";
 
 
 
@@ -28,6 +29,6 @@ $sql = "INSERT INTO funcionario ( usu_nome, usu_sobrenome, usu_data_nascimento, 
     $_con->close();
 }
 else{
-    echo "Erro Dados";
+    echo "Erro de Dados";
 }
 ?>

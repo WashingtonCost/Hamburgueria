@@ -4,7 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
    
     
-$nome =  $_POST["nome"];
+$nome = $_POST["nome"];
 $sobrenome = $_POST["sobrenome"];
 $cpf = $_POST["cpf"];
 $genero = $_POST["genero"];
@@ -28,6 +28,6 @@ $sql = "INSERT INTO funcionario ( fun_nome, fun_sobrenome, fun_data_nascimento, 
     $_con->close();
 }
 else{
-    echo "Erro Dados";
+    echo "Erro de Dados";
 }
 ?>
