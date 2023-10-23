@@ -1,0 +1,143 @@
+/* Estilo Geral */
+body {
+    font-family: 'Arial', Helvetica, sans-serif;
+    background-color: #F5D6BF;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do Cabeçalho */
+.cabecalho {
+    padding: 20px;
+    text-align: center;
+    background-color: #572215;
+    color: #F2C94C; /* Cor de texto mais clara para um contraste elegante */
+}
+
+.cabecalho h1 {
+    font-size: 3rem;
+    font-family: 'Pacifico', cursive;
+    margin: 10px 0;
+}
+
+/* Estilo da Barra de Navegação */
+.topnav {
+    background-color: #F2C94C;
+}
+
+.topnav a {
+    display: inline-block;
+    color: #572215; /* Cor de texto mais escura para contraste */
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.topnav a:hover {
+    background-color: #572215;
+    color: #F2C94C;
+}
+
+/* Estilo da Seção de Destaque */
+.destaque {
+    background-color: #572215;
+    color: #F2C94C;
+    padding: 30px;
+    text-align: center;
+}
+
+.destaque h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.destaque p {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.destaque .botao-destaque {
+    display: inline-block;
+    background-color: #F2C94C;
+    color: #572215;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.destaque .botao-destaque:hover {
+    background-color: #572215;
+    color: #F2C94C;
+}
+
+/* Estilo do Rodapé */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #572215;
+    color: #F2C94C;
+}
+
+/* Estilo do Botão de Cupom */
+.botaoCupom {
+    display: inline-block;
+    background-color: #F2C94C;
+    color: #572215;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 1.2rem;
+}
+
+.botaoCupom:hover {
+    background-color: #572215;
+    color: #F2C94C;
+}
+
+/* Outras Classes */
+.imagens img {
+    max-width: 100%;
+}
+
+/* Estilo para Formulário */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #F2C94C;
+    border: 1px solid #572215;
+    border-radius: 5px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #572215;
+    border-radius: 5px;
+    width: 100%;
+}
+
+input[type="submit"] {
+    background-color: #572215;
+    color: #F2C94C;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+input[type="text"][readonly] {
+    background-color: #eee;
+    cursor: not-allowed;
+}
