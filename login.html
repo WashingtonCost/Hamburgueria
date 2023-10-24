@@ -30,17 +30,18 @@
             <div class="card">
                 <form id="login-form" action="index.html">
                     <label for="username">Usuário:</label>
-                    <input type="text"  class="form-control" id="username" name="username" required minlength="3" maxlength="20"
-                        pattern="[a-zA-Z0-9]+" title="O nome de usuário deve conter apenas letras e números entre 3 e 20 caracteres.">
+                    <input type="text" class="form-control" id="username" name="username" required minlength="3"
+                        maxlength="20" pattern="[a-zA-Z0-9]+"
+                        title="O nome de usuário deve conter apenas letras e números entre 3 e 20 caracteres.">
 
                     <label for="email">Email:</label>
-                    <input type="email"  class="form-control" id="email" name="email" required
+                    <input type="email" class="form-control" id="email" name="email" required
                         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                         title="Por favor, insira um endereço de email válido">
 
                     <label for="password">Senha:</label>
-                    <input type="password"  class="form-control" id="password" name="password" required minlength="6" maxlength="20"
-                        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{6,20}$"
+                    <input type="password" class="form-control" id="password" name="password" required minlength="6"
+                        maxlength="20" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{6,20}$"
                         title="A senha deve conter entre 6 e 20 caracteres, pelo menos uma letra maiúscula, uma letra minúscula e um número.">
 
                     <input type="submit" id="entrar-btn" value="Entrar" disabled>

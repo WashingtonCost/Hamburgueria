@@ -1,26 +1,26 @@
-body{
+body {
     background-color: brown;
     color: crimson;
 
 }
 
-.classe1{
+.classe1 {
     width: 400px;
     height: 300px;
     border: 50px;
 }
 
-.dvCentraliza{
+.dvCentraliza {
     margin: 0px auto;
     width: 80%;
     border: 1px dotted blue;
 }
 
-.textocentro{
+.textocentro {
     text-align: center;
 }
 
-h1{
+h1 {
     margin: 50px;
     padding: 25px 50px 45px 20px;
     border: 1px;
@@ -34,5 +34,3 @@ h1{
 .image-container img {
     margin-right: 10px;
 }
-  
-  

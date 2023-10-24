@@ -12,12 +12,13 @@ body {
     padding: 20px;
     text-align: center;
     background-color: #572215;
-    color: #F2C94C; /* Cor de texto mais clara para um contraste elegante */
+    color: #F2C94C;
+    /* Cor de texto mais clara para um contraste elegante */
 }
 
 .cabecalho h1 {
     font-size: 3rem;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Pacifico', ;
     margin: 10px 0;
 }
 
@@ -28,8 +29,9 @@ body {
 
 .topnav a {
     display: inline-block;
-    color: #572215; /* Cor de texto mais escura para contraste */
-    padding: 10px 20px;
+    color: #572215;
+    /* Cor de texto mais escura para contraste */
+    padding: 20px 25px;
     text-decoration: none;
     margin: 0 10px;
 }
@@ -48,7 +50,9 @@ body {
 }
 
 .destaque h2 {
-    font-size: 2.5rem;
+    font-weight: bold;
+    color: #F2C94C;
+    font-size: 1.9rem;
     margin-bottom: 20px;
 }
 
@@ -56,6 +60,9 @@ body {
     font-size: 1.4rem;
     margin-bottom: 20px;
 }
+
+
+
 
 .destaque .botao-destaque {
     display: inline-block;
@@ -75,9 +82,16 @@ body {
 /* Estilo do Rodapé */
 .footer {
     padding: 20px;
+    /* Espaçamento interno */
     text-align: center;
-    background-color: #572215;
-    color: #F2C94C;
+    /* Alinhamento do texto */
+    background-color: #63250D;
+    /* Cor de fundo */
+    color: #e4df51;
+    /* Cor do texto */
+    width: 100%;
+    /* Largura */
+
 }
 
 /* Estilo do Botão de Cupom */
@@ -112,9 +126,11 @@ form {
     border-radius: 5px;
 }
 
-label {
+label p {
     font-weight: bold;
     margin-bottom: 10px;
+
+
 }
 
 input[type="text"],
